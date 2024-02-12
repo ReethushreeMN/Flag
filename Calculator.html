@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+    border: 1px solid black;
+    background-color:gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#display
+{
+    height: 70px;
+    width: 230px;
+    font-size: xx-large;
+    align-content: end;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 700px;
+}
+#CE
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color:bisque;
+    font-size: x-large;
+    border-radius: 30%;
+    margin: 2%;
+}
+#CE
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color:bisque;
+    font-size: x-large;
+    border-radius: 60%;
+    margin: 2%;
+}
+#C
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color:bisque;
+    font-size: x-large;
+    border-radius: 60%;
+    margin: 2%;
+}
+#Per
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color:bisque;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Div
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color:bisque;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Sev
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Eig
+{border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Nin
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Mul
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color:bisque;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Fou
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Fiv
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}#Six
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Min
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color:bisque;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#One
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Two
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Thr
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Plu
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color:bisque;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+    
+}
+#Pluormin
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Zer
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Dot
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+}
+#Equ
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    font-size: x-large;
+    border-radius: 20%;
+    margin: 2%;
+    color: white;
+}
+#d1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#d2
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#d3
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#d4
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#d5
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+    </style>
+    <link rel="stylesheet" href="./Class8.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset id="container">
+        <form name="Calculator">
+            <div id="display"><input type="text" name="display" id="display" ></div><br>
+
+            <div id="d1">
+                <input type="button" id="CE" value="CE" onclick="display.value =''">
+                <input type="button" id="C" value="C" onclick="display.value=display.value.toString().slice(0,-1)">
+                <input type="button" id="Per" value="%" onclick="display.value +='%'">
+                <input type="button" id="Div" value="/" onclick="display.value +='/'">
+            </div>
+            <div id="d2">
+                <input type="button" id="Sev" value="7" onclick="display.value +='7'">
+                <input type="button" id="Eig" value="8" onclick="display.value +='8'">
+                <input type="button" id="Nin" value="9" onclick="display.value +='9'">
+                <input type="button" id="Mul" value="" onclick="display.value +=''">
+            </div>
+            <div id="d3">
+                <input type="button" id="Fou" value="4" onclick="display.value +='4'">
+                <input type="button" id="Fiv" value="5" onclick="display.value +='5'">
+                <input type="button" id="Six" value="6" onclick="display.value +='6'">
+                <input type="button" id="Min" value="-" onclick="display.value +='-'">
+            </div>
+            <div id="d4">
+                <input type="button" id="One" value="1" onclick="display.value +='1'">
+                <input type="button" id="Two" value="2" onclick="display.value +='2'">
+                <input type="button" id="Thr" value="3" onclick="display.value +='3'">
+                <input type="button" id="Plu" value="+" onclick="display.value +='+'">
+            </div>
+            <div id="d5">
+                <input type="button" id="Pluormin" value="+/-" onclick="display.value +='00'">
+                <input type="button" id="Zer" value="0" onclick="display.value +='0'">
+                <input type="button" id="Dot" value="." onclick="display.value +='.'">
+                <input type="button" id="Equ" value="=" onclick="display.value =eval(display.value)">
+            </div>
+        </form>
+    </fieldset>
+    </div>
+</body>
+</html>
